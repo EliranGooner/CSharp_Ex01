@@ -1,8 +1,9 @@
-﻿/// <summary>
-/// A diamond printer
-/// </summary>
+﻿
 public class Program
-{
+{   
+    private const short k_shortDiagonalLength = 9;
+    private const char k_charSymbol = '*';
+    private const short k_layer = 0;
     public class Diamond
     {
         private char m_charSymbol;
@@ -66,7 +67,7 @@ public class Program
 
     public static void Main()
     {
-        var diamond = new Diamond(9, '*');
-        diamond.PrintDiamond(0);
+        var diamond = new Diamond(k_shortDiagonalLength, k_charSymbol);
+        diamond.PrintDiamond(k_layer);
     }
 }
