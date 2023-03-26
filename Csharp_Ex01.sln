@@ -7,7 +7,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinarySeries", "BinarySerie
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DiamondForBeginners", "DiamondForBeginners\DiamondForBeginners.csproj", "{62E8B298-25AC-4C79-9340-140319D44B2F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiamondForTheAdvanced", "DiamondForTheAdvanced\DiamondForTheAdvanced.csproj", "{54EA8BF8-924E-41F7-A1F2-84E22B91A520}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DiamondForTheAdvanced", "DiamondForTheAdvanced\DiamondForTheAdvanced.csproj", "{54EA8BF8-924E-41F7-A1F2-84E22B91A520}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NumberStatistics", "NumberStatistics\NumberStatistics.csproj", "{AA1D370D-93AC-4408-841D-4E23A23F4FAE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{54EA8BF8-924E-41F7-A1F2-84E22B91A520}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{54EA8BF8-924E-41F7-A1F2-84E22B91A520}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{54EA8BF8-924E-41F7-A1F2-84E22B91A520}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA1D370D-93AC-4408-841D-4E23A23F4FAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA1D370D-93AC-4408-841D-4E23A23F4FAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA1D370D-93AC-4408-841D-4E23A23F4FAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA1D370D-93AC-4408-841D-4E23A23F4FAE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
