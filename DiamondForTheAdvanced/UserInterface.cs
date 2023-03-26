@@ -1,5 +1,4 @@
-﻿using System;
-
+﻿
 namespace DiamondForTheAdvanced
 {
     public class UserInterface
@@ -9,32 +8,22 @@ namespace DiamondForTheAdvanced
             string rawInput = string.Empty;
             short proccessedInput = 0;
             bool isValidInput = false;
-            System.Console.Write(
-@"Hello There!
-Please enter the size for your diamond
-(integers only!) and press enter:");
+            System.Console.WriteLine("Hello There!");
 
             while (!isValidInput)
             {
-                rawInput = System.Console.ReadLine();
-                try
-                {
-                    proccessedInput = short.Parse(rawInput);
+                System.Console.Write("Please enter the size for your diamond\n(integers only!) and press enter:");
+                rawInput = System.Console.ReadLine(); 
+                isValidInput = short.TryParse(rawInput,out proccessedInput);
                     // only odd numbers are allowed
                     // implicitly increment
-                    if (proccessedInput % 2 == 0)
-                    {
-                        ++proccessedInput;
-                    }
-                    isValidInput = true;
-                }
-                catch
+        
+                if (!isValidInput)
                 {
                     System.Console.Clear();
-                    System.Console.Write(
-@"Invalid input, please try again
-(integers only!) and press enter:");
+                    System.Console.WriteLine("Invalid input");
                 }
+                   
             }
             System.Console.Clear();
             return proccessedInput;
