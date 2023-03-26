@@ -5,11 +5,11 @@ VisualStudioVersion = 17.5.33516.290
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinarySeries", "BinarySeries\BinarySeries.csproj", "{D149915C-B811-48D8-BC73-A1798CAC62A0}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DiamondForBeginners", "DiamondForBeginners\DiamondForBeginners.csproj", "{62E8B298-25AC-4C79-9340-140319D44B2F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NumberStatistics", "NumberStatistics\NumberStatistics.csproj", "{AA1D370D-93AC-4408-841D-4E23A23F4FAE}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DiamondForTheAdvanced", "DiamondForTheAdvanced\DiamondForTheAdvanced.csproj", "{54EA8BF8-924E-41F7-A1F2-84E22B91A520}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DiamondForBeginners", "DiamondForBeginners1\DiamondForBeginners.csproj", "{B1DB6702-CF0C-41A3-9401-C062BA6BF7C6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NumberStatistics", "NumberStatistics\NumberStatistics.csproj", "{AA1D370D-93AC-4408-841D-4E23A23F4FAE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DiamondForTheAdvanced", "DiamondForTheAdvanced1\DiamondForTheAdvanced.csproj", "{5AD754D9-3638-4EA7-9820-83EBBE4CBF74}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,18 +21,18 @@ Global
 		{D149915C-B811-48D8-BC73-A1798CAC62A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D149915C-B811-48D8-BC73-A1798CAC62A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D149915C-B811-48D8-BC73-A1798CAC62A0}.Release|Any CPU.Build.0 = Release|Any CPU
-		{62E8B298-25AC-4C79-9340-140319D44B2F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{62E8B298-25AC-4C79-9340-140319D44B2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{62E8B298-25AC-4C79-9340-140319D44B2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{62E8B298-25AC-4C79-9340-140319D44B2F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{54EA8BF8-924E-41F7-A1F2-84E22B91A520}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{54EA8BF8-924E-41F7-A1F2-84E22B91A520}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{54EA8BF8-924E-41F7-A1F2-84E22B91A520}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{54EA8BF8-924E-41F7-A1F2-84E22B91A520}.Release|Any CPU.Build.0 = Release|Any CPU
 		{AA1D370D-93AC-4408-841D-4E23A23F4FAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{AA1D370D-93AC-4408-841D-4E23A23F4FAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AA1D370D-93AC-4408-841D-4E23A23F4FAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AA1D370D-93AC-4408-841D-4E23A23F4FAE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B1DB6702-CF0C-41A3-9401-C062BA6BF7C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1DB6702-CF0C-41A3-9401-C062BA6BF7C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1DB6702-CF0C-41A3-9401-C062BA6BF7C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1DB6702-CF0C-41A3-9401-C062BA6BF7C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5AD754D9-3638-4EA7-9820-83EBBE4CBF74}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5AD754D9-3638-4EA7-9820-83EBBE4CBF74}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5AD754D9-3638-4EA7-9820-83EBBE4CBF74}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5AD754D9-3638-4EA7-9820-83EBBE4CBF74}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
