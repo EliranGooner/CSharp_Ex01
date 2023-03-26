@@ -1,29 +1,24 @@
 ﻿
 namespace DiamondForTheAdvanced
 {
-    public class UserInterface
+    public class TUI
     {
-        public static short GetInputFromUser()
+        public static short GetInputFromUser(string i_prompt)
         {
             string rawInput = string.Empty;
             short proccessedInput = 0;
             bool isValidInput = false;
-            System.Console.WriteLine("Hello There!");
 
             while (!isValidInput)
             {
-                System.Console.Write("Please enter the size for your diamond\n(integers only!) and press enter:");
+                System.Console.Write(i_prompt);
                 rawInput = System.Console.ReadLine(); 
-                isValidInput = short.TryParse(rawInput,out proccessedInput);
-                    // only odd numbers are allowed
-                    // implicitly increment
-        
+                isValidInput = short.TryParse(rawInput,out proccessedInput);         
                 if (!isValidInput)
                 {
                     System.Console.Clear();
                     System.Console.WriteLine("Invalid input");
                 }
-                   
             }
             System.Console.Clear();
             return proccessedInput;
