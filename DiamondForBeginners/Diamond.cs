@@ -38,12 +38,12 @@
             for (short i = 0; i < m_shortDiagonalLength; i++)
             {
                 layer += m_isGrowing
-                    ? growingPhaseLayerArithmetics(i, i_LayerIdx) : shrinkingPhaseLayerArithmetics(i, i_LayerIdx); 
+                    ? growingPhaseLayerArithmetics(i, i_LayerIdx) : shrinkingPhaseLayerArithmetics(i, i_LayerIdx);
             }
             return layer;
         }
 
-        public void PrintDiamond(short i_LayerIdx)
+        public void PrintDiamond(short i_LayerIdx = 0)
         {
             if (i_LayerIdx == m_shortDiagonalLength)
             {

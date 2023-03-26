@@ -1,10 +1,13 @@
 ﻿using DiamondForBeginners;
+using DiamondForTheAdvanced;
+
 public class Program
 {
     public static void Main()
     {
-        Diamond diamond = new Diamond(15,'*');
-        diamond.PrintDiamond(0);
+        short customDiamondSize = UserInterface.GetInputFromUser();
+        Diamond diamond = new Diamond(customDiamondSize, '*');
+        diamond.PrintDiamond();
     }
 
 }
