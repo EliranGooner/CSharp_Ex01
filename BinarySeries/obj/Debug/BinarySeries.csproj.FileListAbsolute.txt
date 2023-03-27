@@ -1,8 +1,0 @@
-C:\Users\gavie\OneDrive\Desktop\MTA\3rd Year\semester 2\C#\ex1\CSharp_Ex01\BinarySeries\bin\Debug\BinarySeries.exe.config
-C:\Users\gavie\OneDrive\Desktop\MTA\3rd Year\semester 2\C#\ex1\CSharp_Ex01\BinarySeries\bin\Debug\BinarySeries.exe
-C:\Users\gavie\OneDrive\Desktop\MTA\3rd Year\semester 2\C#\ex1\CSharp_Ex01\BinarySeries\bin\Debug\BinarySeries.pdb
-C:\Users\gavie\OneDrive\Desktop\MTA\3rd Year\semester 2\C#\ex1\CSharp_Ex01\BinarySeries\obj\Debug\BinarySeries.csproj.AssemblyReference.cache
-C:\Users\gavie\OneDrive\Desktop\MTA\3rd Year\semester 2\C#\ex1\CSharp_Ex01\BinarySeries\obj\Debug\BinarySeries.csproj.SuggestedBindingRedirects.cache
-C:\Users\gavie\OneDrive\Desktop\MTA\3rd Year\semester 2\C#\ex1\CSharp_Ex01\BinarySeries\obj\Debug\BinarySeries.csproj.CoreCompileInputs.cache
-C:\Users\gavie\OneDrive\Desktop\MTA\3rd Year\semester 2\C#\ex1\CSharp_Ex01\BinarySeries\obj\Debug\BinarySeries.exe
-C:\Users\gavie\OneDrive\Desktop\MTA\3rd Year\semester 2\C#\ex1\CSharp_Ex01\BinarySeries\obj\Debug\BinarySeries.pdb
