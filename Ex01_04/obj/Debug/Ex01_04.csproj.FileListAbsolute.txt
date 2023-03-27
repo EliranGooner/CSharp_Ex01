@@ -1,0 +1,7 @@
+C:\Users\user\source\repos\Csharp_Ex01\Ex01_04\bin\Debug\Ex01_04.exe.config
+C:\Users\user\source\repos\Csharp_Ex01\Ex01_04\bin\Debug\Ex01_04.exe
+C:\Users\user\source\repos\Csharp_Ex01\Ex01_04\bin\Debug\Ex01_04.pdb
+C:\Users\user\source\repos\Csharp_Ex01\Ex01_04\obj\Debug\Ex01_04.csproj.AssemblyReference.cache
+C:\Users\user\source\repos\Csharp_Ex01\Ex01_04\obj\Debug\Ex01_04.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\Csharp_Ex01\Ex01_04\obj\Debug\Ex01_04.exe
+C:\Users\user\source\repos\Csharp_Ex01\Ex01_04\obj\Debug\Ex01_04.pdb
