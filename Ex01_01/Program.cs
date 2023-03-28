@@ -17,14 +17,14 @@ namespace Ex01_01
                 out double thirdLargestNumber);
             getNumsAverageOfDigits(firstInputNumber, secondInputNumber, thirdInputNumber,
                 out float averageOfZeros, out float averageOfOnes);
-            getDivisiveBy4Numbers(firstDecimalNumber, secondDecimalNumber, thirdDecimalNumber, 
-                out int amountOfDivisiveBy4Numbers);
+            getDivisibleBy4Numbers(firstDecimalNumber, secondDecimalNumber, thirdDecimalNumber, 
+                out int amountOfDivisibleBy4Numbers);
             getDescendingSeriesNumbers(firstDecimalNumber, secondDecimalNumber, thirdDecimalNumber,
                 out int amountOfDescendingSeriesNumbers);
             getPalindromeNumbers(firstDecimalNumber, secondDecimalNumber, thirdDecimalNumber, 
                 out int amountOfPalindromeNumbers);
             printDecimalNumbers(largestNumber, secondLargestNumber, thirdLargestNumber);
-            printDecimalNumbersStatistics(averageOfZeros, averageOfOnes, amountOfDivisiveBy4Numbers,
+            printDecimalNumbersStatistics(averageOfZeros, averageOfOnes, amountOfDivisibleBy4Numbers,
                 amountOfDescendingSeriesNumbers, amountOfPalindromeNumbers);
         }
 
@@ -42,19 +42,17 @@ namespace Ex01_01
         {
             double decimalNumber = 0;
             double currentPowerOf2 = 0;
-
-            for(int i = i_BinaryNumber.Length - 1; i >= 0; i--)
+            for (int i = i_BinaryNumber.Length - 1; i >= 0; i--)
             {
                 int.TryParse(i_BinaryNumber[i].ToString(), out int currentDigitExtracted);
 
-                if(currentDigitExtracted == 1)
+                if (currentDigitExtracted == 1)
                 {
                     decimalNumber += Math.Pow(2, currentPowerOf2);
                 }
 
                 currentPowerOf2++;
             }
-
             return decimalNumber;
         }
 
@@ -70,31 +68,27 @@ namespace Ex01_01
         private static string getBinaryNumberFromUser()
         {
             string userInput = Console.ReadLine();
-
-            while(!isValidInput(userInput))
+            while (!isValidInput(userInput))
             {
                 Console.WriteLine("Please enter a binary number (containing only 0s and 1s) and press enter:");
                 userInput = Console.ReadLine();
             }
-
             return userInput;
         }
 
         private static bool isValidInput(string i_UserInput)
         {
-            if(i_UserInput.Length != 8)
+            if (i_UserInput.Length != 8)
             {
                 return false;
             }
-
-            for(int i = 0; i < 8; i++)
+            for (int i = 0; i < 8; i++)
             {
-                if(i_UserInput[i] != '0' && i_UserInput[i] != '1')
+                if (i_UserInput[i] != '0' && i_UserInput[i] != '1')
                 {
                     return false;
                 }
             }
-
             return true;
         }
 
@@ -102,11 +96,10 @@ namespace Ex01_01
                                                               double i_ThirdInputNumber, out double o_LargestNumber,
                                                               out double o_SecondLargestNumber, out double o_ThirdLargestNumber)
         {
-            if(i_FirstInputNumber >= i_SecondInputNumber && i_FirstInputNumber >= i_ThirdInputNumber)
+            if (i_FirstInputNumber >= i_SecondInputNumber && i_FirstInputNumber >= i_ThirdInputNumber)
             {
                 o_LargestNumber = i_FirstInputNumber;
-
-                if(i_SecondInputNumber >= i_ThirdInputNumber)
+                if (i_SecondInputNumber >= i_ThirdInputNumber)
                 {
                     o_SecondLargestNumber = i_SecondInputNumber;
                     o_ThirdLargestNumber = i_ThirdInputNumber;
@@ -117,10 +110,9 @@ namespace Ex01_01
                     o_ThirdLargestNumber = i_SecondInputNumber;
                 }
             }
-            else if(i_SecondInputNumber >= i_FirstInputNumber && i_SecondInputNumber >= i_ThirdInputNumber)
+            else if (i_SecondInputNumber >= i_FirstInputNumber && i_SecondInputNumber >= i_ThirdInputNumber)
             {
                 o_LargestNumber = i_SecondInputNumber;
-
                 if(i_FirstInputNumber >= i_ThirdInputNumber)
                 {
                     o_SecondLargestNumber = i_FirstInputNumber;
@@ -135,8 +127,7 @@ namespace Ex01_01
             else
             {
                 o_LargestNumber = i_ThirdInputNumber;
-
-                if(i_FirstInputNumber >= i_SecondInputNumber)
+                if (i_FirstInputNumber >= i_SecondInputNumber)
                 {
                     o_SecondLargestNumber = i_FirstInputNumber;
                     o_ThirdLargestNumber = i_SecondInputNumber;
@@ -178,25 +169,24 @@ namespace Ex01_01
             double amountOfDigit = 0;
             for (int i = 0; i < i_InputNumber.Length; i++)
             {
-                if(i_InputNumber[i] == i_Digit)
+                if (i_InputNumber[i] == i_Digit)
                 {
                     amountOfDigit++;
                 }
             }
-
             return amountOfDigit;
         }
 
-        private static void getDivisiveBy4Numbers(double i_FirstDecimalNumber, double i_SecondDecimalNumber,
-                                                  double i_ThirdDecimalNumber, out int o_AmountOfDivisiveBy4Numbers)
+        private static void getDivisibleBy4Numbers(double i_FirstDecimalNumber, double i_SecondDecimalNumber,
+                                                  double i_ThirdDecimalNumber, out int o_AmountOfDivisibleBy4Numbers)
         {
-            o_AmountOfDivisiveBy4Numbers = 0;
-            if(i_FirstDecimalNumber % 4 == 0)
-                o_AmountOfDivisiveBy4Numbers++;
+            o_AmountOfDivisibleBy4Numbers = 0;
+            if (i_FirstDecimalNumber % 4 == 0)
+                o_AmountOfDivisibleBy4Numbers++;
             if (i_SecondDecimalNumber % 4 == 0)
-                o_AmountOfDivisiveBy4Numbers++;
+                o_AmountOfDivisibleBy4Numbers++;
             if (i_ThirdDecimalNumber % 4 == 0)
-                o_AmountOfDivisiveBy4Numbers++;
+                o_AmountOfDivisibleBy4Numbers++;
         }
 
         private static void getDescendingSeriesNumbers(double i_FirstDecimalNumber, double i_SecondDecimalNumber,
@@ -216,7 +206,7 @@ namespace Ex01_01
             double currentDigitValue = i_Number % 10;
             while (i_Number > 0)
             {
-                if(i_Number % 10 > currentDigitValue)
+                if (i_Number % 10 > currentDigitValue)
                 {
                     currentDigitValue = i_Number % 10;
                 }
@@ -224,10 +214,8 @@ namespace Ex01_01
                 {
                     return false;
                 }
-
                 i_Number /= 10;
             }
-
             return true;
         }
 
@@ -248,10 +236,9 @@ namespace Ex01_01
             string numberAsStr = i_Number.ToString();
             int leftCurrentDigitOrder = 0;
             int rightCurrentDigitOrder = numberAsStr.Length - 1;
-
-            while(leftCurrentDigitOrder < rightCurrentDigitOrder)
+            while (leftCurrentDigitOrder < rightCurrentDigitOrder)
             {
-                if(numberAsStr[leftCurrentDigitOrder] != numberAsStr[rightCurrentDigitOrder])
+                if (numberAsStr[leftCurrentDigitOrder] != numberAsStr[rightCurrentDigitOrder])
                 {
                     return false;
                 }
@@ -259,17 +246,16 @@ namespace Ex01_01
                 leftCurrentDigitOrder++;
                 rightCurrentDigitOrder--;
             }
-
             return true;
         }
 
         private static void printDecimalNumbersStatistics(float i_AverageOfZeros, float i_AverageOfOnes,
-                                                          int i_AmountOfDivisiveBy4Numbers, int i_AmountOfDescendingSeriesNumbers,
+                                                          int i_AmountOfDivisibleBy4Numbers, int i_AmountOfDescendingSeriesNumbers,
                                                           int i_AmountOfPalindromeNumbers)
         {
             Console.WriteLine("Average amount of zeros in input numbers: " + i_AverageOfZeros);
             Console.WriteLine("Average amount of ones in input numbers: " + i_AverageOfOnes);
-            Console.WriteLine("Amount of input numbers divisive by 4: " + i_AmountOfDivisiveBy4Numbers);
+            Console.WriteLine("Amount of input numbers divisible by 4: " + i_AmountOfDivisibleBy4Numbers);
             Console.WriteLine("Amount of input numbers which represent a descending series is: " + i_AmountOfDescendingSeriesNumbers);
             Console.WriteLine("Amount of input numbers which represent a palindrome is: " + i_AmountOfPalindromeNumbers);
         }
