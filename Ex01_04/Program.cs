@@ -29,7 +29,6 @@ namespace Ex01_04
                 {
                     return false;
                 }
-
                 if (i_DigitsOrLetters == "Letters" && (i_UserInput[i] <= '9' && i_UserInput[i] >= '0'))
                 {
                     return false;
@@ -74,7 +73,6 @@ namespace Ex01_04
             {
                 return false;
             }
-
             return isPalindrome(i_UserInput.Substring(1, i_UserInput.Length - 2));
         }
 
@@ -103,9 +101,8 @@ namespace Ex01_04
             }
             else
             {
-                outputMessage.Append("The the amount of uppercase letters in the input is " + i_AmountOfUppercaseLetters);
+                outputMessage.Append("The amount of uppercase letters in the input is " + i_AmountOfUppercaseLetters);
             }
-
             Console.WriteLine(outputMessage.ToString());
         }
     }
