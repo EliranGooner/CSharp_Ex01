@@ -16,11 +16,11 @@
         System.Console.WriteLine("4. The average of the digits is {0}.", getAverage(userInput));
     }
 
-    private static bool isValidNumber(string i_numberstring)
+    private static bool isValidNumber(string i_NumberString)
     {
-        for (int i = 0; i < i_numberstring.Length; i++)
+        for (int i = 0; i < i_NumberString.Length; i++)
         {
-            if (i_numberstring[i] < '0' || i_numberstring[i] > '9')
+            if (i_NumberString[i] < '0' || i_NumberString[i] > '9')
             {
                 return false;
             }
@@ -28,14 +28,14 @@
         return true;
     }
 
-    public static string getInputFromUser(string i_prompt)
+    public static string getInputFromUser(string i_Prompt)
     {
 
         bool isValidInput = false;
         string userInput = string.Empty;
         while (!isValidInput)
         {
-            System.Console.WriteLine(i_prompt);
+            System.Console.WriteLine(i_Prompt);
             userInput = System.Console.ReadLine();
 
             isValidInput = userInput.Length == 6 && isValidNumber(userInput);
@@ -60,9 +60,9 @@
         return sumOfDigits / Convert.ToSingle(digitCount);
     }
 
-    private static int digitToShort(int i, string i_NumberString)
+    private static int digitToShort(int i_I, string i_NumberString)
     {
-        int plainValue = Convert.ToInt32(i_NumberString[i]);
+        int plainValue = Convert.ToInt32(i_NumberString[i_I]);
         return plainValue - k_ASCIIOffset;
     }
 
